@@ -1,0 +1,137 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="own-style.css">
+
+</head>
+
+
+<body class="login-body">
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <button type="button" class="btn navbar-btn btn-primary"> <a href="login-page.html">Login</a></button>
+      <button type="button" class="btn navbar-btn btn-info"><a href="student-view.html">Student View</a></button>
+      <button type="button" class="btn navbar-btn btn-success"> <a href="teacher-dashboard.html">Teacher Dashboard</a></button>
+    </div>
+  </nav>
+
+
+    <!-- About The User - Modal Login-->
+
+
+    <div class="modal fade" id="myModalProfile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+
+                <h4 class="modal-title" id="myModalLabel">User Profile</h4>
+              </div>
+              <div class="modal-body">
+                    <p id="pennyPenguinButtonValue"></p>
+                <p>What's your full name?</p>
+                  <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Full Name" id="fullName">
+                    </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button id="goBack" type="button" class="btn btn-danger"><a href="character-directory.html">Go Back</a></button>
+                <button id="submitName" type="submit" class="btn btn-success" onclick="fullNameResponse()" data-dismiss="modal" href="#">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+    <!-- Pick an Activity -->
+
+  <div class="container container-45">
+    <h1 align="center"><strong>Hi, <span id="printFullName"></span>!</strong></h1>
+    <h3 align="center">Pick an activity from the drop down menu:</h3>
+
+<br>
+<div class="row">
+<form name="activity_selector" method="post" action="#">
+   <select  name="activity_list" class="form-control activity-selector-dropdown" id="activity-numbers" >
+     <option value="" selected="selected" disabled="disabled">Select an activity...</option>
+     <option value="0" >Activity 1: </option>
+     <option value="1" >Activity 2: </option>
+     <option value="2" >Activity 3: </option>
+     <option value="3" >Activity 4: </option>
+   </select>
+   </form>
+ </div>
+ <br>
+<div class="row">
+    <div class="well" id="activity-name"></div>
+    </div>
+<button type="button" name="button" onclick="goToSite()">Submit</button>
+  </div>
+  
+  
+
+
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer">
+      <hr>
+      <div class="container-fluid" style="margin-bottom:20px;">
+        <div class="row">
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <button type="button" class="btn btn-primary btn-xs" aria-label="Left Align">
+              <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>&nbsp;Like
+            </button>
+            <button type="button" class="btn btn-info btn-xs" aria-label="Left Align">
+              Tweet
+            </button>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <span class="pull-right">&copy; Jennifer Foung - MSTU5003 - Summer 2017</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- jquery & javascript -->
+  <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
